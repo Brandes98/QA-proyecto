@@ -1,0 +1,14 @@
+version = 1
+
+[[analyzers]]
+name = "dart"               # analiza Dart/Flutter
+enabled = true
+
+[analyzers.settings]
+# Thresholds de complejidad ciclomática
+cyclomatic_complexity = 8
+# Tamaño máximo de funciones en líneas
+function_length = 50
+
+# Detecta prints en producción y falta de tipos
+enable_issues = ["avoid_print", "missing_type_annotation", "prefer_single_quotes", "deprecated_member_use"]
