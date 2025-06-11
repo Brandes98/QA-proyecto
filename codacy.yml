@@ -1,0 +1,28 @@
+# .codacy.yml
+engines:
+  dart:
+    enabled: true
+
+tools:
+  metrics:
+    cyclomatic_complexity:
+      enabled: true
+      config:
+        max: 8
+    lines_of_code:
+      enabled: true
+      config:
+        max: 50
+    number_of_parameters:
+      enabled: true
+      config:
+        max: 3
+    maximum_nesting_level:
+      enabled: true
+      config:
+        max: 3
+
+paths:
+  include:
+    - lib/pages/Professors/controllers/professors_profile_controller.dart
+    - lib/pages/Professors/views/professors_profile_view.dart
